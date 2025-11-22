@@ -1,0 +1,31 @@
+# Entorno virtual
+.venv/
+env/
+venv/
+.env.example
+
+# Archivos de entorno
+.env
+*.env
+
+# Cache de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configuración de VSCode
+.vscode/
+
+# Archivos temporales
+*.log
+*.sqlite
+*.db
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Docker
+postgres_data/
+agrombia.db
