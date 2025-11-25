@@ -3,9 +3,9 @@ services:
   db:
     image: postgres:15
     environment:
-      POSTGRES_USER: agrombia
-      POSTGRES_PASSWORD: agrombia_pass
-      POSTGRES_DB: agrombia
+      POSTGRES_USER: inventrack
+      POSTGRES_PASSWORD: inventrack_pass
+      POSTGRES_DB: inventrack
     volumes:
       - db_data:/var/lib/postgresql/data
     ports:
@@ -17,7 +17,7 @@ services:
     volumes:
       - .:/app
     environment:
-      - DATABASE_URL=postgresql://agrombia:agrombia_pass@db:5432/agrombia
+      - DATABASE_URL=postgresql://inventrack:inventrack_pass@db:5432/inventrack
       - SECRET_KEY=CAMBIA_POR_UNA_SECRETA
     ports:
       - "8000:8000"
